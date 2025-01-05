@@ -804,6 +804,10 @@ main {
   border-radius: 14px;
   box-shadow: var(--shadow-2);
   z-index: 1;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
 }
 
 .certification-item::before {
@@ -830,15 +834,20 @@ main {
 
 .certification-icon-box { margin-bottom: 10px; }
 
-.certification-icon-box img { margin: auto; }
+.certification-icon-box img { 
+  margin: auto;
+  max-width: 100px; 
+  height: auto;
+}
 
 .certification-content-box { 
   color: var(--light-gray);
   font-weight: var(--fw-300);
   line-height: 1.6;
   text-align: center;
+  word-wrap: break-word;
+  max-width: 100%;
 }
-
 
 
 /*-----------------------------------*\

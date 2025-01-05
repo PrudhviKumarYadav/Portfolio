@@ -808,6 +808,7 @@ main {
   flex-direction: column;
   align-items: center;
   justify-content: center;
+  min-width: 200px; 
 }
 
 .certification-item::before {
@@ -829,15 +830,20 @@ main {
   height: 100%;
   width: 100%;
   text-decoration: none;
-  color: inherit; /* Ensure that link text color is preserved */
+  color: inherit; 
 }
 
-.certification-icon-box { margin-bottom: 10px; }
+.certification-icon-box { 
+  margin-bottom: 10px; 
+  display: flex;
+  justify-content: center; 
+}
 
 .certification-icon-box img { 
   margin: auto;
   max-width: 100px; 
   height: auto;
+  min-width: 70px;
 }
 
 .certification-content-box { 
